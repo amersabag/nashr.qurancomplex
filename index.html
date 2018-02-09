@@ -612,7 +612,7 @@ fontNames = ['QCF_P604.TTF'];
 fontNames.forEach(x => {
   document.write(x);
   document.write(' صفحة' + i);
-  let fontName = x.replace(/.ttf/, '').replace('_', ' ');
+  let fontName = x.replace(/.ttf/i, '').replace('_', ' ');
   document.write('<p style="font-family: \'' + fontName + '\';">');
   for(let j = 32; j < 256; ++j){
     document.write(String.fromCharCode(j));
