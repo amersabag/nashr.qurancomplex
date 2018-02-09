@@ -615,7 +615,7 @@ fontNames.forEach(x => {
   let fontName = x.replace(/.ttf/i, '');
   document.write('<p style="font-family: ' + fontName + ';">');
   for(let j = 32; j < 256; ++j){
-    document.write(String.fromCharCode(j) + ' ');
+    document.write("&#x200F;" + String.fromCharCode(j) + ' ');
   }
   document.write('</p>');
   ++i;
